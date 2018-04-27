@@ -30,7 +30,7 @@ class Rotator : MonoBehaviour
     // and changes the rotation of the Transform component.
     void Update()
     {
-        transform.rotation *= Quaternion.AxisAngle(Time.deltaTime * speed, Vector3.up);
+        transform.rotation *= Quaternion.AngleAxis(Time.deltaTime * speed, Vector3.up);
     }
 }
 ```
